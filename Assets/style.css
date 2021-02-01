@@ -110,7 +110,6 @@ img:hover {
   width: 200px;
   transition: 0.3s;
   border-radius: 40px;
-  width: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
