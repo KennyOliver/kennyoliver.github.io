@@ -136,8 +136,6 @@ footer > i::after {
   min-height: 40px;
   max-height: 50px;
   z-index: 100;
-}
-.mobnav, .topnav {
   box-shadow: 0px 0px 8px 0px #333;
   /* box-shadow: [x offset] [y offset] [blur radius] [optional spread radius] [color]; */
 }
