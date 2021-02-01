@@ -29,7 +29,7 @@ body {
 @keyframes blurLoad {
   0% {background-size:cover; filter: blur(20px)}
   90% {background-size:cover; filter: blur(1px)}
-  100% {background-size:cover; filter: blur(0px)}
+  100% {background-size:cover; filter: blur(0)}
 }
 
 img {
@@ -69,7 +69,7 @@ img:hover {
 }
 
 .aboutBlock {
-  padding: 80px 80px 600px 80px;
+  padding: 80px 80px 600px;
   text-align: center;
   background: rgb(210,210,210,0.5);
   color: grey;
@@ -162,7 +162,7 @@ img:hover {
   margin-left: -5px;
   border-width: 8px;
   border-style: solid;
-  border-color: #fff transparent transparent transparent;
+  border-color: #fff transparent transparent;
 }
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {visibility: visible; opacity: 1;}
@@ -171,7 +171,7 @@ img:hover {
 .NOTE {
   background-color: rgb(0,160,0,0.1);
   border-radius: 15px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   display: inline-block; /* Shrink to fit contents */
   font-style: italic;
   width: 100%;
@@ -183,7 +183,7 @@ img:hover {
 .FACT {
   background-color: rgb(0,0,160,0.1);
   border-radius: 15px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   display: inline-block; /* Shrink to fit contents */
   font-style: italic;
   width: 100%;
@@ -195,7 +195,7 @@ img:hover {
 .WARNING {
   background-color: rgb(160,0,0,0.15);
   border-radius: 15px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   display: inline-block; /* Shrink to fit contents */
   font-style: italic;
   font-weight: 580 /*bold = 700*/;
@@ -208,7 +208,7 @@ img:hover {
 .ARTICLE_DATA {
   background-color: rgb(0,0,0,0.1);
   border-radius: 15px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   display: inline-block; /* Shrink to fit contents */
   /*font-style: italic;*/
   
