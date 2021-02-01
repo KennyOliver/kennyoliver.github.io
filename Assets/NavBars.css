@@ -121,7 +121,7 @@ footer {
 }
 footer > i::after {
   font-style: italic;
-  content: 'Kenny\'s Website 2020';
+  content: 'Kenny\'s Website 2020 - v95 &mdash; Hosted with &#9829 by GitHub';
   padding-bottom: 10px;
 }
 
