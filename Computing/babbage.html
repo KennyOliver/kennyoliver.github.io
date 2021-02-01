@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kenny | C. Babbage</title>
+      <link rel="icon" type="image/png" href="../KIcon.png">
+      <link href="..//Assets/style.css" rel="stylesheet" type="text/css"/>
+      <link href="..//Assets/NavBars.css" rel="stylesheet" type="text/css"/>
+      <script src="..//Assets/FontAwesome.js" crossorigin="anonymous"></script>
+    <div class="mobnav" id="myMobnav">
+      <a class="home" href="../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+      <a href="../aboutPage.html"><i class="fas fa-fingerprint"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+        <a href="../compPage.html" class="active"><i class="fas fa-code"></i></a>
+        <a class="active"><i class="fas fa-chevron-right"></i></a>
+        <a class="active" style="background-color:#53D457"><i class="fas fa-microchip"></i></a>
+      </div>
+      <a href="../moreStuff.html"><i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a class="home" href="../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+        <a href="../aboutPage.html">About <i class="fas fa-fingerprint"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+      <a href="../compPage.html" class="active">Computing <i class="fas fa-code"></i></a>
+      <a class="active"><i class="fas fa-chevron-right"></i></a>
+      <a class="active" style="background-color:#53D457">C. Babbage <i class="fas fa-microchip"></i></a>
+      </div>
+      <a href="../moreStuff.html">More <i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+<style>
+/* Babbage page image panel */
+#babbage_panel {
+  border-radius: 16px;
+  border: 4px dashed rgb(0,0,0,0.1);
+  padding: 20px;
+  width: 170px;
+  height: 280px;
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#babbage_panel img {border: 4px solid rgb(0,0,0,0.1);border-radius: 16px;height:170px;width:150px;opacity:0.5;}
+#babbage_panel:hover img {transition: 0s; display: none;}
+#babbage_panel:hover span {margin: auto;display: none;}
+#babbage_panel p {margin: auto;display: none;}
+#babbage_panel:hover p {margin: auto;display: flex;text-align: center;}
+
+
+
+#babbageExpand {background-color: rgb(0,0,0,0.2);}
+
+#wrapButtons {
+background-color: #333;
+height: 80px;
+padding: 30px 20px 0px 20px;
+border-radius: 60px;
+display: table;
+display: inline-block;
+}
+.btn-group > a {
+border-radius: 25px;
+padding: 10px;
+border-width: 12px;
+font-size: 20px;
+font-weight: bold;
+text-decoration: none;
+display: table-cell;
+vertical-align: middle;
+}
+#babbageWikiButton {background-color: rgb(255,255,255,0.3);border-color: rgb(255,255,255);color:rgb(255,255,255);border-radius: 25px;}
+
+.babbageList {
+  width: flex;
+  position: center;
+  display: inline-block;
+  background: rgb(0,0,0,0.2);
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px solid rgb(0,0,0,0.2);
+}
+.babbageListItems {
+  position: relative;
+  display: block;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  /*text-transform: uppercase;*/
+  animation: fadeIn 2.25s linear;
+  animation-fill-mode: both;
+  background-color: rgb(255,255,255,0.15);
+}
+
+.babbageListItems:nth-child(1) {
+  animation-delay: 0.25s;
+}
+.babbageListItems:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.babbageListItems:nth-child(3) {
+  animation-delay: 0.75s;
+}
+.babbageListItems:nth-child(4) {
+  animation-delay: 1s;
+}
+.babbageListItems:nth-child(5) {
+  animation-delay: 1.25s;
+}
+/*.babbageListItems:nth-child(6) {
+  animation-delay: 1.5s;
+}*/
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="block">
+    <hr class="BAR"/>
+      <h1 id="aboutMe" classname="aboutMe" class="aboutMe"><i class="fas fa-microchip"></i></h1>
+    <hr class="BAR"/>
+    <p></p>
+    
+    <br/>
+    <ul class="babbageList">
+      <li class="babbageListItems" style="font-size:20px;"><b><div id="babbage_panel">
+    <img src="//cdn.britannica.com/12/194612-050-6100BA16/Charles-Babbage.jpg" style="opacity:0.8;border-radius:50%;">
+    <p><b>1792-1871</b></p>
+    <span>Charles Babbage</span>
+    </div></b></li>
+      <li class="babbageListItems">Designed a programmable computing device</li>
+      <li class="babbageListItems">Made plans for two computing machines</li>
+      <li class="babbageListItems">Founded both the Analytical Society and Astronomical Society</li>
+      <li class="babbageListItems">Designed the main elements of the modern computer,<br/>including the central processor, memory, and data organization</li>
+      <!--<li class="babbageListItems">E</li>-->
+    </ul>
+    <br/>
+    <div><a href="//simple.m.wikipedia.org/wiki/Charles_Babbage" class="styledButton"><i class="fab fa-wikipedia-w" style="font-weight:bold;font-size:20px;"></i>ikipedia</a></div>
+    <br/><br/><br/><br/><br/>
+    </div>
+    </div>
+  <footer>
+    <i></i>
+  </footer>
+  </body>
+</html>

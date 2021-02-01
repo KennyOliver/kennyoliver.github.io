@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kenny | Music</title>
+      <link rel="icon" type="image/png" href="../KIcon.png">
+      <link href="../Assets/style.css" rel="stylesheet" type="text/css"/>
+      <link href="../Assets/NavBars.css" rel="stylesheet" type="text/css"/>
+      <link href="../Assets/progressRadials.css" rel="stylesheet" type="text/css"/>
+      <script src="../Assets/FontAwesome.js" crossorigin="anonymous"></script>
+    <div class="mobnav" id="myMobnav">
+      <a class="home" href="../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+      <a href="../aboutPage.html"><i class="fas fa-fingerprint"></i></a>
+      <a href="../compPage.html"><i class="fas fa-code"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+        <a href="../moreStuff.html"><i class="fas fa-compass"></i></a>
+        <a class="active"><i class="fas fa-chevron-right"></i></a>
+        <a class="active" style="background-color:#53D457"><i class="fa fa-guitar"></i></a>
+      </div>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a class="home" href="../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+      <a href="../aboutPage.html">About <i class="fas fa-fingerprint"></i></a>
+      <a href="../compPage.html">Computing <i class="fas fa-code"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+        <a href="../moreStuff.html">More <i class="fas fa-compass"></i></a>
+        <a class="active"><i class="fas fa-chevron-right"></i></a>
+        <a class="active" style="background-color:#53D457">Music <i class="fa fa-guitar"></i></a>
+      </div>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+<style>
+.wrapper {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+}
+.container {
+	flex: 1;
+	padding: 0 20px;
+}
+</style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="block">
+    <hr class="BAR"/>
+      <h1 id="aboutMe" classname="aboutMe" class="aboutMe"><i class="fas fa-guitar"></i></h1>
+    <hr class="BAR"/>
+      <br/>
+      <div class="imageBox">
+        <img src="//source.unsplash.com/collection/1241706/music" alt="Random Musical Instrument Image" width="270" height="180">
+        <img src="//source.unsplash.com/collection/3138625/strings" alt="Random Violin Image" width="270" height="180">
+        <img src="//source.unsplash.com/collection/2039153/piano" alt="Random Piano Image" width="270" height="180">
+        <div style="font-weight:bold">Music</div>
+      </div>
+    </div>
+    <div class="block" style="background-color:rgb(255,255,255,0.1)">
+      <div style="display:inline-block;text-align:center">
+        <p>I like two musicals</p>
+      <div><img src="//pbs.twimg.com/profile_images/819069847204003840/0nWL6idX_400x400.jpg" style="width:20%;height:20%"><div>La La Land</div></div>
+      <br/>
+        <div><img src="//www.heraldscotland.com/resources/images/11512139.jpg" style="width:20%;height:20%"><div>Hamilton</div></div>
+      </div>
+    </div>
+    <div class="block" style="background-color:rgb(255,255,255,0.15)">
+      <!-- NOTE TO SELF: Slice 1 must be 90deg, whilst Slice 2 is what is actually filled-->
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(270deg);"></div>
+        <div class="chart-center"><span>Piano</span></div></div>
+      </div>
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(270deg);"></div>
+        <div class="chart-center"><span>Theory</span></div></div>
+      </div>
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(270deg);"></div>
+        <div class="chart-center"><span>Violin</span></div></div>
+      </div>
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(180deg);"></div>
+        <div class="chart-center"><span>Viola</span></div></div>
+      </div>
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(180deg);"></div>
+        <div class="chart-center"><span>Flute</span></div></div>
+      </div>
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(180deg);"></div>
+        <div class="chart-center"><span>Guitar</span></div></div>
+      </div>
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(288deg);"></div>
+        <div class="chart-center"><span>Ukulele</span></div></div>
+      </div>
+      <div class="card">
+        <div class="donut-chart chart"><div class="slice one" style="transform: rotate(90deg);"></div><div class="slice two" style="transform: rotate(360deg);"></div>
+        <div class="chart-center"><span>Ocarina</span></div></div>
+      </div>
+      <br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/>
+      <br/><br/><br/>
+    </div>
+  <footer>
+    <i></i>
+  </footer>
+  </body>
+</html>

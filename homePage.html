@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kenny | Home</title>
+      <link rel="icon" type="image/png" href="KIcon.png">
+      <link href="/Assets/style.css" rel="stylesheet" type="text/css"/>
+      <link href="/Assets/NavBars.css" rel="stylesheet" type="text/css"/>
+      <script src="/Assets/FontAwesome.js" crossorigin="anonymous"></script>
+     <div class="mobnav" id="myMobnav">
+      <a class="home"><i class="fab fa-kickstarter-k"></i>.</a>
+      <a href="aboutPage.html"><i class="fas fa-fingerprint"></i></a>
+      <a href="compPage.html"><i class="fas fa-code"></i></a>
+      <a href="moreStuff.html"><i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myMobFunction()">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a class="home"><i class="fab fa-kickstarter-k"></i>enny.</a>
+      <a href="aboutPage.html">About <i class="fas fa-fingerprint"></i></a>
+      <a href="compPage.html">Computing <i class="fas fa-code"></i></a>
+      <a href="moreStuff.html">More <i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      </a>
+    </div>
+<style>
+@keyframes infiniteHandWave {  
+0% {transform: rotate(15deg);}
+50% {transform: rotate(0deg);}
+100% {transform: rotate(-15deg);}
+}
+/* #hand {animation: infiniteHandWave 0.8s linear infinite alternate backwards} */ /* [Duration] [Delay] [Iterations] */
+#hand {transform: rotate(20deg);}
+</style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="block">
+    <hr class="BAR"/>
+      <h1 id="aboutMe" classname="aboutMe" class="aboutMe"><i id="hand" class="fas fa-hand-paper"></i></h1>
+    <hr class="BAR"/>
+      <h3><u>Hi there!</u></h3>
+      <p>My name is Kenny, and I have many interests.<br/>This website has interactive objects everywhere <i class="fas fa-magic"></i>.<br/>Hover over (tap on a touchscreen) stuff like images <i class="fas fa-images"></i> & buttons <i class="fas fa-play-circle"></i>,<br/>and they'll come to life!</p>
+      <p>This website's a project for my Computer Science class.<br/>It's my best effort yet; all my expertise so far,<br/>from my previous websites!</p>
+      <div class="BUTTON_BLOCK">
+        <div><a href="aboutPage.html" class="styledButton">Find Out More <i class="fas fa-search"></i></a></div>
+        <p class="mobileButtonGap"></p>
+        <div><a href="compPage.html" class="styledButton">Visit Computing <i class="fas fa-code"></i></a></div>
+      </div>
+      <br/><br/>
+      <div class="imageBox">
+        <img src="//source.unsplash.com/collection/235" alt="Best of NASA Collection" width="270" height="180">
+        <div style="padding-bottom:5px;font-weight:bold">@NASA</div>
+        <div><a href="/More/spacePage.html" class="styledButton">Visit Space <i class="fas fa-satellite"></i></a></div>
+      </div>
+      <div class="imageBox">
+        <img src="//source.unsplash.com/collection/185245/succulents" alt="Random Succulent Image" width="270" height="180">
+        <div style="padding-bottom:5px;font-weight:bold">Flora</div>
+        <div><a href="/More/naturePage.html" class="styledButton">Visit Flora <i class="fas fa-leaf"></i></a></div>
+      </div>
+      <div class="imageBox">
+        <img src="//source.unsplash.com/collection/3138625/strings" alt="Random Violin Image" width="270" height="180">
+        <div style="padding-bottom:5px;font-weight:bold;">Music</div>
+        <div><a href="/More/music.html" class="styledButton">Visit Music <i class="fas fa-guitar"></i></a></div>
+      </div>
+      <br/><br/>
+      </div>
+  <footer>
+    <i></i>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<style>
+body {
+  background: black;
+  width: 100%;
+}
+.loader { 
+    margin: 0 auto;
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background: black;
+    animation: dance 4s infinite ease-in-out;
+    /* Make div shrink to contents */
+    display: inline-block;
+    text-align: center;
+    /**/
+    position: center;
+}
+
+@keyframes dance {
+  0%,100% {
+    width: 60px;
+  }
+  25% {
+    /*width: 25px;*/
+    border-color: gray;
+    transform: translateY(50px);
+    height: 2px;
+  }
+  50% {
+    /*width: 60px;*/
+  }
+  75% {
+    /*width: 25px;*/
+    /*transform: translateY(25px);*/
+    height: 2px;
+    /*height: 25px;*/
+  }
+}
+</style>
+<p></p>
+<div>
+<div class="loader"></div>
+</div>
+<div class="loader" style="animation-delay:-2s;"></div>

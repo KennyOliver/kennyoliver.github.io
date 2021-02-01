@@ -1,0 +1,53 @@
+.card {
+  float: left;
+  /* background: #fff; */
+  padding: 20px;
+  margin: 0 20px 0 0;
+}
+
+.donut-chart {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.donut-chart .slice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.donut-chart .chart-center {position: absolute; border-radius: 50%;}
+.donut-chart .chart-center span {display: block; text-align: center;}
+
+.donut-chart.chart {
+  width: 200px;
+  height: 200px;
+  background: rgb(255,255,255,0.4); /* Unfilled chart color */
+}
+.donut-chart.chart .slice.one {
+  clip: rect(0 200px 100px 0);
+  /* % value!!! 3.6 x % */
+  background: #333; /* Color for first 25% */
+}
+.donut-chart.chart .slice.two {
+  clip: rect(0 100px 200px 0);
+  /* % value!!! 3.6 x % */
+  background: #333; /* Color for next 75% */
+}
+.donut-chart.chart .chart-center {
+  top: 10px;
+  left: 10px;
+  width: 180px;
+  height: 180px;
+  background: white; /* Center background */
+}
+.donut-chart.chart .chart-center span {
+  font-size: 40px;
+  line-height: 180px;
+  color: #333; /* Text color */
+  font-family: SanFrancisco;
+}
+
+
+/* color: #50c690; */

@@ -1,0 +1,155 @@
+.cssload-cube, .cssload-face {width: 80px; height: 80px;}
+
+.cssload-cube {
+	display:block;
+	margin:138px auto;
+	position: relative;
+	transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+	transform: rotateX(45deg) rotate(45deg);
+		-o-transform: rotateX(45deg) rotate(45deg);
+		-ms-transform: rotateX(45deg) rotate(45deg);
+		-webkit-transform: rotateX(45deg) rotate(45deg);
+		-moz-transform: rotateX(45deg) rotate(45deg);
+	animation: magic 1.5s ease-in-out infinite both;
+		-o-animation: magic 1.5s ease-in-out infinite both;
+		-ms-animation: magic 1.5s ease-in-out infinite both;
+		-webkit-animation: magic 1.5s ease-in-out infinite both;
+		-moz-animation: magic 1.5s ease-in-out infinite both;
+}
+
+
+
+.cssload-face {
+	position: absolute;
+	width: 69px;
+	height: 69px;
+	transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+					transform-style: preserve-3d;
+}
+.cssload-face:before, .cssload-face:after {
+	display: block;
+	content: "";
+	background-color: inherit;
+	position: absolute;
+	width: 69px;
+	height: 69px;
+	transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+					transform-style: preserve-3d;
+}
+
+.cssload-z {
+	background: rgba(36,148,155,0.5);
+	transform: translateZ(34px);
+		-o-transform: translateZ(34px);
+		-ms-transform: translateZ(34px);
+		-webkit-transform: translateZ(34px);
+		-moz-transform: translateZ(34px);
+}
+
+.cssload-x {background-color: rgba(214,57,53,0.52);}
+.x:after {
+	transform: rotateX(90deg) translateZ(34px);
+		-o-transform: rotateX(90deg) translateZ(34px);
+		-ms-transform: rotateX(90deg) translateZ(34px);
+		-webkit-transform: rotateX(90deg) translateZ(34px);
+		-moz-transform: rotateX(90deg) translateZ(34px);
+}
+.cssload-x:before {
+	transform: rotateX(90deg) translateZ(-34px);
+		-o-transform: rotateX(90deg) translateZ(-34px);
+		-ms-transform: rotateX(90deg) translateZ(-34px);
+		-webkit-transform: rotateX(90deg) translateZ(-34px);
+		-moz-transform: rotateX(90deg) translateZ(-34px);
+}
+
+.cssload-y {background-color: rgba(231,156,16,0.52);}
+.cssload-y:after {
+	transform: rotateY(90deg) translateZ(34px);
+		-o-transform: rotateY(90deg) translateZ(34px);
+		-ms-transform: rotateY(90deg) translateZ(34px);
+		-webkit-transform: rotateY(90deg) translateZ(34px);
+		-moz-transform: rotateY(90deg) translateZ(34px);
+}
+.cssload-y:before {
+	transform: rotateY(90deg) translateZ(-34px);
+		-o-transform: rotateY(90deg) translateZ(-34px);
+		-ms-transform: rotateY(90deg) translateZ(-34px);
+		-webkit-transform: rotateY(90deg) translateZ(-34px);
+		-moz-transform: rotateY(90deg) translateZ(-34px);
+}
+
+
+@keyframes magic {
+	16% {transform: rotateX(45deg) rotate(45deg) scaleX(3);}
+	33% {transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3);}
+	50% {transform: rotateX(45deg) rotate(45deg) scaleX(1) scaleY(3);}
+	66% {transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3) scaleZ(3);}
+	83% {transform: rotateX(45deg) rotate(45deg) scaleY(3);}
+}
+
+@-o-keyframes magic {
+	16% {-o-transform: rotateX(45deg) rotate(45deg) scaleX(3);}
+	33% {-o-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3);}
+	50% {-o-transform: rotateX(45deg) rotate(45deg) scaleX(1) scaleY(3);}
+	66% {-o-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3) scaleZ(3);}
+	83% {-o-transform: rotateX(45deg) rotate(45deg) scaleY(3);}
+}
+
+@-ms-keyframes magic {
+	16% {-ms-transform: rotateX(45deg) rotate(45deg) scaleX(3);}
+	33% {-ms-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3);}
+	50% {-ms-transform: rotateX(45deg) rotate(45deg) scaleX(1) scaleY(3);}
+	66% {-ms-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3) scaleZ(3);}
+	83% {-ms-transform: rotateX(45deg) rotate(45deg) scaleY(3);}
+}
+
+@-webkit-keyframes magic {
+	16% {-webkit-transform: rotateX(45deg) rotate(45deg) scaleX(3);}
+	33% {-webkit-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3);}
+	50% {-webkit-transform: rotateX(45deg) rotate(45deg) scaleX(1) scaleY(3);}
+	66% {-webkit-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3) scaleZ(3);}
+	83% {-webkit-transform: rotateX(45deg) rotate(45deg) scaleY(3);}
+}
+
+@-moz-keyframes magic {
+	16% {-moz-transform: rotateX(45deg) rotate(45deg) scaleX(3);}
+	33% {-moz-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3);}
+	50% {-moz-transform: rotateX(45deg) rotate(45deg) scaleX(1) scaleY(3);}
+	66% {-moz-transform: rotateX(45deg) rotate(45deg) scaleX(3) scaleY(3) scaleZ(3);}
+	83% {-moz-transform: rotateX(45deg) rotate(45deg) scaleY(3);}
+}
+
+
+
+/* Blurriness upon loading */
+
+@keyframes blurLoad {
+  0% {background-size:cover;filter: blur(60px); background-color: #000;}
+  10% {background-size:cover; filter: blur(54px)}
+  20% {background-size:cover; filter: blur(48px)}
+  30% {background-size:cover; filter: blur(44px)}
+  40% {background-size:cover; filter: blur(38px)}
+  50% {background-size:cover; filter: blur(34px)}
+  60% {background-size:cover; filter: blur(28px)}
+  70% {background-size:cover; filter: blur(24px)}
+  80% {background-size:cover; filter: blur(18px)}
+  90% {background-size:cover; filter: blur(14px)}
+  100% {background-size:cover; filter: blur(10px); background-color: #262626;}
+}
+
+/* The element to apply the animation to */
+body {animation-name: blurLoad; animation-duration: 5.25s;}
+
+.aboutMe {color: white;}

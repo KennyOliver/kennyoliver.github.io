@@ -1,0 +1,19 @@
+<style>
+div { 
+    margin-top: 50px;
+    width: 50px; height: 10px;
+    background: #000;
+    animation: dance 2s infinite ease-in-out paused;
+}
+
+#anim:checked ~ div {animation-play-state: running;}
+
+@keyframes dance {
+  0%, 100% {transform: translateX(0);}
+  50% {transform: translateX(300px);}
+}
+</style>
+<input type="checkbox" id="anim">
+<label for="anim">Start / stop animation</label>
+    
+<div></div>

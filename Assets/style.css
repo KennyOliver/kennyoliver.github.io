@@ -1,0 +1,295 @@
+@import url(//fonts.googleapis.com/css?family=Lato);
+@font-face {font-family: SanFrancisco; src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff);}
+@font-face {font-family: GoogleSans; src: url(https://fonts.gstatic.com/s/googlesans/v16/4UabrENHsxJlGDuGo1OIlLV154tzCwZsPF4o.woff2);}
+
+/* REMEMBER! "Opacity: x;" affects children, rgb(x,x,x,opacity) doesn't. */
+
+@media screen and (max-width: 1000px) {
+  .DESKTOP {display: none;}
+  .imageBox {margin-left: 50%; margin-right: 50%;}
+  img {width: 240px; height: 160px;}
+}
+@media screen and (min-width: 1001px) {.MOBILE {display: none;}}
+
+/* The element to apply the animation to */
+
+HTML {background: #262626; animation: blurLoad 0.4s ease-in;} /* Illusion that the blur is faster when ease is included */
+/* CSS_Tricks Rules:
+Use ease-in and ease-out opposite of their names 
+E.g. ease-in when stuff is LEAVING so that they begin SLOW and get FASTER
+E.g. ease-out when stuff is ENTERING so that they begin FAST and get SLOWER */
+body {
+  /* background: linear-gradient(0deg, rgba(255,140,140,1) 0%, rgba(255,218,127,1) 100%); */
+  background: linear-gradient(0deg, #ff8c8c 0%, #ffda7f 100%);
+  font-family: SanFrancisco;
+  margin: 0;
+}
+
+/* Blurriness upon loading*/
+@keyframes blurLoad {
+  0% {background-size:cover; filter: blur(20px)}
+  90% {background-size:cover; filter: blur(1px)}
+  100% {background-size:cover; filter: blur(0px)}
+}
+
+img {
+  transition: 0.6s;
+  border: 4px solid rgb(0,0,0,0.2);
+  border-radius: 35px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  background: rgb(0,0,0,0.2);
+}
+img:hover {
+  transition: 0.6s;
+  border: 4px solid rgb(0,0,0,0.65);
+  filter: grayscale(0%);
+}
+.imageBox {
+  border: none;
+  border-radius: 40px;
+  background: rgb(0,0,0,0.1);
+  padding: 10px;
+  margin: 5px;
+  /* Make div horizontally align */
+  display: inline-block;
+  text-align: center;
+  transition: 0.6s;
+}
+
+.block {
+  padding: 80px;
+  text-align: center;
+  /* background: rgb(255,255,255,0.5); */
+  background: none;
+  /* Not inherit because it will be black */
+  color: rgb(0,0,0,0.4);
+  font-size: 30px;
+  /* overflow: auto; */
+}
+
+.aboutBlock {
+  padding: 80px 80px 600px 80px;
+  text-align: center;
+  background: rgb(210,210,210,0.5);
+  color: grey;
+  font-size: 30px;
+  /* Make everything aligned */
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.BAR {background: rgb(0,0,0,0.1); border: none; border-radius: 20px; height: 10px;}
+
+/* Animate a links NOT divs for navbar */
+
+
+/*Center anything*/
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.styledButton {
+  background: #333;
+  border: 4px solid white;
+  color: white;
+  display: inline-block;
+  font-family: SanFrancisco; /* GoogleSans looks ugly on buttons!!! */
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 200px;
+}
+.styledButton {
+  transition: 0.3s;
+  border-radius: 40px;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.styledButton:hover {
+  transition: 0.3s;
+  background: white;
+  color: #333;
+  border: 4px solid #333;
+}
+.styledButton > i {transition: 0.3s; transform: rotate(0deg);}
+.styledButton:hover > i {transition: 0.3s; transform: rotate(360deg);}
+
+
+
+/* Tooltip container */
+.tooltip {position: relative; display: inline-block;/*border-bottom: 1px dotted black;*//* For dots under the text */}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: flex;
+  background: #444;
+  color: #fff;
+  font-family: SanFrancisco;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid white;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+/* Tooltip pointer */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {visibility: visible; opacity: 1;}
+
+
+.NOTE {
+  background-color: rgb(0,160,0,0.1);
+  border-radius: 15px;
+  padding: 4px 10px 4px 10px;
+  display: inline-block; /* Shrink to fit contents */
+  font-style: italic;
+  width: 100%;
+  
+  transition: 0.4s;
+}
+.NOTE:hover {background: rgb(0,160,0,0.2)}
+.NOTE::before {font-family: FontAwesome; content: '\f0a4 \0020 Note:\0020';}
+.FACT {
+  background-color: rgb(0,0,160,0.1);
+  border-radius: 15px;
+  padding: 4px 10px 4px 10px;
+  display: inline-block; /* Shrink to fit contents */
+  font-style: italic;
+  width: 100%;
+  
+  transition: 0.4s;
+}
+.FACT:hover {background: rgb(0,0,160,0.2)}
+.FACT::before {font-family: FontAwesome; content: '\f19d \0020 Fact!\0020';}
+.WARNING {
+  background-color: rgb(160,0,0,0.15);
+  border-radius: 15px;
+  padding: 4px 10px 4px 10px;
+  display: inline-block; /* Shrink to fit contents */
+  font-style: italic;
+  font-weight: 580 /*bold = 700*/;
+  width: 100%;
+  
+  transition: 0.4s;
+}
+.WARNING:hover {background: rgb(160,0,0,0.2)}
+.WARNING::before {font-family: FontAwesome; font-weight: 900; content: '\f071 \0020 Warning:\0020';}
+.ARTICLE_DATA {
+  background-color: rgb(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 4px 10px 4px 10px;
+  display: inline-block; /* Shrink to fit contents */
+  /*font-style: italic;*/
+  
+  transition: 0.4s;
+}
+.ARTICLE_DATA:hover {background: rgb(0,0,0,0.2)}
+.ARTICLE_DATA::before {font-family: FontAwesome; content: '\f518\0020'; font-size: 26px}
+
+
+h1, h2, h3, h4, h5, h6 {font-family: Lato;}
+
+code, pre {
+  font-family: Courier New;
+  text-align: left;
+  color: black;
+  font-size: 60%;
+  background-color: #f1f1f1;
+  opacity: 0.6;
+  padding: 10px;
+  border: 4px solid rgb(0,0,0,0.1);
+  border-radius: 25px;
+  background-clip:padding-box;
+}
+
+.BUTTON_BLOCK {
+  background-color: rgb(0,0,0,0.1);
+  border: none;
+  border-radius: 45px;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+  margin: 4px;
+}
+.mobileButtonGap {/* line-height doesn't to anything, but height does (smallest is already current size of <p> tag */}
+
+
+.subtitle {text-decoration: underline;}
+
+
+.AUTHOR_BLOCK {
+  background: rgb(0,0,0,0.2);
+  border-radius: 40px;
+  width: 220px;
+  height: 60px;
+  display: inline-block;
+}
+.AUTHOR_BLOCK:hover > .AUTHOR_PHOTO {
+  transition: 0.6s;
+  border: 2px solid rgb(0,0,0,0.0);
+  background: rgb(0,0,0,0.2);
+  background-clip: padding-box;
+  filter: grayscale(0%);
+  transform: rotate(360deg);
+  transition-timing-function: ease-in-out;
+}
+.AUTHOR_PHOTO {
+  transition: 0.8s;
+  background: rgb(0,0,0,0.1);
+  border: 2px solid rgb(0,0,0,0);
+  background-clip: padding-box;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  margin: 4px;
+  float: left;
+  transition-timing-function: ease-out;
+}
+.AUTHOR {
+  font-family: Lato;
+  font-size: 20px;
+  color: #f2f2f2;
+  line-height: 20px; /* Align text vertically!!! */
+}
+
+
+.iFrameYouTube {
+    background: white;
+    border: 4px solid rgb(0,0,0,0.1);
+    border-radius: 25px;
+    padding: 10px;
+    background-clip: padding-box;
+  }
+iframe {border-radius: 25px;}

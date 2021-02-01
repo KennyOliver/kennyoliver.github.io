@@ -1,0 +1,174 @@
+@media screen and (max-width: 1000px) {
+  .topnav {
+    float: none;
+    display: none;
+    visibility: hidden;
+  }
+  .mobnav {
+    display: inline-block;
+    visibility: visible;
+  }
+  .mobnav .refreshDiv {
+    background: #00b7ff;
+    color: white;
+    border-radius: 25px 0px 0px 25px;
+    float: right;
+  }
+  .mobnav .refreshDiv:hover {
+    background: #009ddb;
+    color: white;
+    border-radius: 25px 0px 0px 25px;
+    float: right;
+  }
+  .mobnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: GoogleSans;
+    font-size: 17px;
+  }
+  .mobnav a:hover {
+    background: #0d7328;
+    color: white;
+    border-radius: 25px;
+  }
+  
+  /* Highlight current page */
+  .mobnav .active {
+    background: #4caf50;
+    color: white;
+    border-radius: 25px;
+  }
+  .mobnav .colorFill {
+    background: #4caf50;
+    opacity: 1;
+  }
+  /* Hide the link that should open and close the topnav on small screens */
+  .mobnav .icon {display: none;}
+}
+
+
+
+@media screen and (min-width: 1001px) {
+  .mobnav {visibility: hidden;}
+  .topnav .refreshDiv {
+    background: #00b7ff;
+    color: white;
+    border-radius: 25px 0px 0px 25px;
+    float: right;
+  }
+  .topnav .refreshDiv:hover {
+    background: #009ddb;
+    color: white;
+    border-radius: 25px 0px 0px 25px;
+    float: right;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: GoogleSans;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background: #0d7328;
+    color: white;
+    border-radius: 25px;
+  }
+  /* Highlight current page */
+  .topnav .active {
+    background: #4caf50;
+    color: white;
+    border-radius: 25px;
+  }
+  .topnav .colorFill {
+    background-color: #4caf50;
+    opacity: 1;
+  }
+}
+
+
+
+
+.fillBlankSpace {
+  background: #4caf50;
+  opacity: 1;
+  float: left;
+  z-index: 97;
+  border-radius: 0px 25px 25px 0px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2%;
+  z-index: 98;
+  /*box-shadow: 0px 0px 2px 2px #333;*/
+  /* box-shadow: [x offset] [y offset] [blur radius] [optional spread radius] [color]; */
+}
+footer > i::after {
+  font-style: italic;
+  content: 'Kenny\'s Website 2020';
+  padding-bottom: 10px;
+}
+
+
+.mobnav, .topnav {
+  background: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 40px;
+  max-height: 50px;
+  z-index: 100;
+}
+.mobnav, .topnav {
+  box-shadow: 0px 0px 8px 0px #333;
+  /* box-shadow: [x offset] [y offset] [blur radius] [optional spread radius] [color]; */
+}
+.topnav a, .mobnav a {transition: 0.2s;}
+.topnav a:hover, .mobnav a:hover {transition: 0.2s;}
+.refreshDiv > i {
+  transition: 0.4s;
+  transform: rotate(0deg) ease;
+  font-size: 20px;
+}
+.refreshDiv:hover > i {
+  transition: 0.4s;
+  transform: rotate(360deg);
+}
+.home {
+  /*background: #fc9803;*/
+  background: #e63946;
+  color: white;
+  border-radius: 0px 25px 25px 0px;
+}
+.home:hover {
+  /*background: #ba7002;*/
+  background: #c13431 !important;
+  border-radius: 0px 25px 25px 0px !important;
+}
+.home > i {
+  transition: 0.4s;
+  transform: rotate(360deg);
+  font-size: 20px;
+}
+.home:hover > i {
+  transition: 0.4s;
+  transform: rotate(0deg);
+}

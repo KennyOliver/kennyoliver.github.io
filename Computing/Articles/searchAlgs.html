@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kenny | Search Algorithms</title>
+      <link rel="icon" type="image/png" href="../../KIcon.png">
+      <link href="../..//Assets/style.css" rel="stylesheet" type="text/css"/>
+      <link href="../..//Assets/NavBars.css" rel="stylesheet" type="text/css"/>
+      <script src="../..//Assets/FontAwesome.js" crossorigin="anonymous"></script>
+    <div class="mobnav" id="myMobnav">
+      <a class="home" href="../../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+      <a href="../../aboutPage.html"><i class="fas fa-fingerprint"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+        <a href="../../compPage.html" class="active"><i class="fas fa-code"></i></a>
+        <a class="active"><i class="fas fa-chevron-right"></i></a>
+        <a class="active" style="background-color:#53D457"><i class="fas fa-search"></i></a>
+      </div>
+      <a href="../../moreStuff.html"><i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a class="home" href="../../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+        <a href="../../aboutPage.html">About <i class="fas fa-fingerprint"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+      <a href="../../compPage.html" class="active">Computing <i class="fas fa-code"></i></a>
+      <a class="active"><i class="fas fa-chevron-right"></i></a>
+      <a class="active" style="background-color:#53D457">Search Algs. <i class="fas fa-search"></i></a>
+      </div>
+      <a href="../../moreStuff.html">More <i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="block">
+    <hr class="BAR"/>
+      <h1 id="aboutMe" classname="aboutMe" class="aboutMe"><i class="fas fa-search"></i></h1>
+    <hr class="BAR"/>
+    <br/>
+      <img src="//images.unsplash.com/photo-1536009197840-7b923cc3e195?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80" alt="Image of neon Google sign" width="270" height="180" class="imageNASA">
+    <br/><br/>
+      <div class="ARTICLE_DATA">4 mins</div>
+      <br/><br/>
+      <div class="AUTHOR_BLOCK">
+        <img src="//i.postimg.cc/3w71zdns/238-B2-ADD-DADD-4-EEB-B0-AA-96831-A6-AEE78.jpg" class="AUTHOR_PHOTO">
+        <p class="AUTHOR">Kenny Oliver&nbsp;&nbsp;&nbsp;</p><!-- &nbsp; is space for alignment -->
+      </div>
+    <br/><br/>
+    <div><a href="#TLDR" class="styledButton">TL;DR <i class="fas fa-long-arrow-alt-down"></i></a></div>
+    <h3 class="subtitle">What's the definition of "searching"?</h3>
+      <p>In simple English, <b>searching</b> can mean <b>seeking</b> or foraging for something.<br/>But it can also mean '<b>looking stuff up</b>' on the <b>internet</b>.</p>
+      <p>When we surf the internet, we need a search engine to <b>find links to websites</b>.<br/>Most of the time, we can't remember long links, so it can be much <b>easier</b> to use a search engine to find them.</p>
+    <br/>
+    <h3 class="subtitle">Okay, what is a "search engine"?</h3>
+      <p>A search engine is a program used to find data.<br>On the internet, it's usually a website used to <b>find links to other websites</b>.</p>
+      <p>It's likely you're familiar with Google, a typical example of a search engine.</p>
+    <div class="FACT">@TechJury [Abridged]:<br/>In 2020, Google recieves 6.9B searches requests a day! That's 2.5T/year!<br/>Experts say Google could easily break the 10 trillion barrier.<br/>With 1B+ users/month, google.com is the most visited website on Earth!</div>
+    <br/><br/>
+    <div class="NOTE">Other search engines available, too!</div>
+    <br/><br/>
+    <div><a href="https://google.com" class="styledButton">Visit <i class="fab fa-google" style="font-weight:bold;font-size:20px;"></i>oogle</a></div>
+    <br/>
+    <h3 class="subtitle">But how does it all work?</h3>
+      <p>Glad you asked!<br/>There are 2 main algorithms: <b>linear & binary</b>.</p>
+      <p>They are used to <b>find data</b> (in this case, websites) within a <b>dataset</b> (a list).</p>
+    <br/>
+
+    <h3 class="subtitle">Linear</h3>
+      <p>Linear search works by searching a dataset, and <b>checking</b> whether the <b>requested</b> data <b>matches</b> the <b></b>. If there <b>isn't</b> a match, the <b>next item</b> in succession will be checked.</p>
+      <p>Here's the pseudocode <i class="fas fa-code"></i></p>
+    <!-- NOTE: use <code> for inline text, and <pre> for multiline!!!-->
+    <pre>find = 2
+found = Falselength = list.length
+counter = 0
+while found == False and counter < length
+  if list[counter] == find then
+    found = True
+    print ('Found at position', counter)
+  else:
+    counter = counter + 1
+  endif
+endwhile
+if found == False then
+     print('Item not found')
+endif</pre>
+    <p>And here's the Python <i class="fab fa-python"></i></p>
+    <iframe height="400px" width="100%" src="https://repl.it/@KennyOliver/EmbedWebsiteKennyLinearSearch?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" style="border:4px solid rgb(0,0,0,0.1);border-radius:25px;padding:7px;background:#f4f4f4/*iframe color*/;background-clip:padding-box"></iframe>
+  <br/><br/>
+
+  <h3 class="subtitle">Binary</h3>
+      <p>Binary is based upon the <b>"Divide & Conquer"</b> plan.</p>
+      <p>Binary search works by comparing the requested data value to the middle item in the list. <br/>It will check whether the middle value matches, is higher, or is lower. <br/>Then, if the middle item doesn't match, it will cut off the items that are either higher or lower than that middle value, so that there is less to search through. <br/>The algorithm will keep reiterating until an item matches the requested data value, and then return it. </p>
+      <p style="font-weight:bold">In conclusion, it takes the dataset and keeps splitting it in half until the item is found.</p>
+      <p>Here's the pseudocode <i class="fas fa-code"></i></p>
+    <!-- NOTE: use <code> for inline text, and <pre> for multiline!!!-->
+    <pre>find = 11
+found = False
+length = list.length
+lowerBound = 0
+upperBound = length
+while found == False
+  midpoint = int((upperBound + lowerBound))/2
+    if list[midPoint] == find then
+      print('Found at' , midPoint)
+      found = True
+    else
+      if list[midPoint]> item then
+        upperBound = midpoint-1
+      else
+        lowerBound = midpoint+1
+      endif
+    endif
+endwhile
+if found == False then
+     print('Not found')
+endif</pre>
+    <p>And here's the Python <i class="fab fa-python"></i></p>
+    <iframe height="400px" width="100%" src="https://repl.it/@KennyOliver/EmbedWebsiteKennyBinarySearch?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" style="border:4px solid rgb(0,0,0,0.1);border-radius:25px;padding:7px;background:#f4f4f4/*iframe color*/;background-clip:padding-box"></iframe>
+
+    <p id="TLDR"></p>
+    <br/><br/>
+    <h3 class="subtitle">Just to sum up...</h3>
+      <p>You'll need both, each for different scenarios.</p>
+      <p><b>Linear</b> is great if you <b>haven't organised</b> the dataset before it's processed,<br/>however it can take a <b>long time</b> to process the entire dataset.</p>
+      <p><b>Binary</b> is great if you need the dataset to be processed <b>quickly</b>,<br/>however it <b>must be sorted</b> before it's processed.</p>
+      <p>You just have to pick whatever matches your needs.<br/>If you need a quick refresh, or want to find out more,<br/>check out the resources below...</p>
+      <!--<img src="https://bam.files.bbci.co.uk/bam/live/content/zw6gr82/small" style="padding:5px;background:white;background-clip:padding-box">-->
+      <div class="BUTTON_BLOCK">
+        <div><a href="https://www.bbc.co.uk/bitesize/guides/zjdkw6f/revision/2" class="styledButton">BBC Bitesize <i class="fas fa-long-arrow-alt-right"></i> Linear Search <i class="fas fa-fish"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="https://www.teachyourselfpython.com/challenges.php?a=01_Solve_and_Learn&t=7-Sorting_Searching_Algorithms&s=02a_Linear_Search" class="styledButton">TYP <i class="fas fa-long-arrow-alt-right"></i> Linear Search <i class="fab fa-python"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="https://student.craigndave.org/videos/ocr-gcse-slr2-1-linear-search" class="styledButton">Craig 'n' Dave <i class="fas fa-long-arrow-alt-right"></i> Linear Search <i class="fas fa-power-off"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="https://m.youtube.com/watch?v=mce2XxIVkVU&feature=youtu.be" class="styledButton">YouTube <i class="fas fa-long-arrow-alt-right"></i> Linear Search <i class="fab fa-youtube"></i></a></div>
+        </div>
+
+        <div class="BUTTON_BLOCK">
+        <div><a href="https://www.bbc.co.uk/bitesize/guides/zjdkw6f/revision/3" class="styledButton">BBC Bitesize <i class="fas fa-long-arrow-alt-right"></i> Binary Search <i class="fas fa-fish"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="https://www.teachyourselfpython.com/challenges.php?a=01_Solve_and_Learn&t=7-Sorting_Searching_Algorithms&s=02b_Binary_Search" class="styledButton">TYP <i class="fas fa-long-arrow-alt-right"></i> Binary Search <i class="fab fa-python"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="https://student.craigndave.org/videos/ocr-gcse-slr2-1-binary-search" class="styledButton">Craig 'n' Dave <i class="fas fa-long-arrow-alt-right"></i> Binary Search <i class="fas fa-power-off"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="https://m.youtube.com/watch?v=Eiy5DAr1ijs&feature=youtu.be" class="styledButton">YouTube <i class="fas fa-long-arrow-alt-right"></i> Binary Search <i class="fab fa-youtube"></i></a></div>
+      </div>
+    </div>
+  <footer>
+    <i></i>
+  </footer>
+  </body>
+</html>

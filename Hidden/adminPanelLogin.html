@@ -1,0 +1,110 @@
+<script src="login.js" crossorigin="anonymous"></script>
+<script src="/Assets/FontAwesome.js" crossorigin="anonymous"></script>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+  }
+  
+  .loginForm {
+    padding: 3em;
+    width: 90%;
+    /* Center everything */
+    text-align: center;
+    display: inline-block;
+  }
+  .surround {
+    border: 4px dashed rgb(255,255,255,0.3);
+    border-radius: 40px;
+    background-color: rgb(255,255,255,0.15);
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+  
+  input {
+    transition: 0.6s;
+    height: 2em;
+    padding: 20px;
+    margin: 10px;
+    border: 4px solid rgb(255,255,255,0.3);
+    border-radius: 40px;
+    background-color: rgb(255,255,255,0.15);
+    color: white;
+    font-family: Courier;
+    font-size: 40px;
+  }
+  input:focus {
+    transition: 0.6s;
+    border: 4px solid rgb(255,255,255,0.7);
+    background-color: rgb(255,255,255,0.20);
+  }
+  
+  .styledButton {
+    transition: 0.3s;
+    /*transform: rotate(0deg);*/
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    border: 4px solid white;
+    border-radius: 40px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    width: 80%;
+  }
+  .styledButton:hover {
+    transition: 0.3s;
+    /*transform: rotate(360deg);*/
+    background-color: white;
+    color: #333;
+    border: 4px solid #333;
+  }
+  .styledButton > i {
+    transition: 0.3s;
+    transform: rotate(0deg);
+  }
+  .styledButton:hover > i {
+    transition: 0.3s;
+    transform: rotate(360deg);
+  }
+  
+  input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+  }
+  input[type="checkbox"] + label {
+    border: 4px solid rgb(0,0,0,0);
+    font-style: italic;
+    color: rgb(255,255,255,0.4);
+  }
+  input[type="checkbox"]:checked + label {
+    /*background-color: green;*/
+    color: rgb(255,255,255,0.8);
+    border-radius: 15px;
+    font-style: normal;
+  }
+</style>
+
+<title>Kenny | LOGIN</title>
+
+<!--USE A WRAPPING DIV TO CENTER OBJECTS!!!-->
+<div class="loginForm">
+  <div class="surround">
+    <form name = "myform">
+      <h1><i class="fas fa-user"></i></h1>
+        <input type="text" name="username" placeholder="Username" oninput="this.value = this.value.toUpperCase()">
+      <h1><i class="fas fa-key"></i></h1>
+        <input id="pWordBox" type="password" name="pword" placeholder="Password">
+        <br/>
+        <input id="CHECK" type="checkbox" onclick="showPassword()"><label for="CHECK" style="font-size: 20px">Show Password</label>
+      <br/><br/><br/>
+        <a class="styledButton" name="Submit" onclick="validate()">Check In <i class="fas fa-sign-in-alt"></i></a>
+    </form>
+    <br/><br/><br/>
+    <a class="styledButton" href="index.html" style="margin:10px">Go Home <i class="fas fa-home"></i></a>
+    <a class="styledButton" href="" style="margin:10px">Refresh <i class="fas fa-redo-alt"></i></a>
+    <a class="styledButton" onclick="history.back()" style="margin:10px">Go Back <i class="fas fa-undo-alt"></i></a>
+  </div>
+</div>

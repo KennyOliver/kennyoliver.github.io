@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kenny | UI Design Guide</title>
+      <link rel="icon" type="image/png" href="../KIcon.png">
+      <link href="..//Assets/style.css" rel="stylesheet" type="text/css"/>
+      <link href="..//Assets/NavBars.css" rel="stylesheet" type="text/css"/>
+      <script src="..//Assets/FontAwesome.js" crossorigin="anonymous"></script>
+    <div class="mobnav" id="myMobnav">
+      <div class="fillBlankSpace" style="border-radius:25px">
+        <a class="home" href="../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+        <a href="../aboutPage.html"><i class="fas fa-fingerprint"></i></a>
+        <a class="active"><i class="fas fa-chevron-right"></i></a>
+        <a class="active" style="background-color:#53D457"><i class="fas fa-drafting-compass"></i></a>
+      </div>
+      <a href="../compPage.html"><i class="fas fa-code"></i></a>
+      <a href="../moreStuff.html"><i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <div class="fillBlankSpace" style="border-radius:25px">
+        <a class="home" href="../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+        <a href="../aboutPage.html">About <i class="fas fa-fingerprint"></i></a>
+        <a class="active"><i class="fas fa-chevron-right"></i></a>
+        <a class="active" style="background-color:#53D457">UI Design Guide <i class="fas fa-drafting-compass"></i></a>
+      </div>
+      <a href="../compPage.html">Computing <i class="fas fa-code"></i></a>
+      <a href="../moreStuff.html">More <i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+<style>
+  table {
+    background: rgb(0,0,0,0.2);
+    border: 4px solid rgb(255,255,255,0.2);
+    border-radius: 15px;
+    background-clip: padding-box; /* If background leaks out of radii */
+    margin: 10px;
+  }
+  th, td {
+    border: 2px dotted rgb(255,255,255,0.2);
+    /* Solid border seems sterile and plasticy */
+    /* Dashed border gives the illusion that there are faint diagonal stripes across the table */
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  th {background: rgb(255,255,255,0.4);}
+  td {background:rgb(255,255,255,0.3);}
+  .column-split{visibility: hidden;margin-left:5px;margin-right:5px;}
+
+tr.header,  tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  transition: 0.4s;
+  background-color: #f2f2f2;
+  /* border: 2px solid #333; */
+}
+
+.colors > tr > td {text-transform: uppercase;}
+</style>
+</head>
+<body style="z-index:1">
+    <script src="script.js"></script>
+
+    <div class="block">
+      <hr class="BAR"/>
+        <h1 id="aboutMe" classname="aboutMe" class="aboutMe"><i class="fas fa-drafting-compass"></i></h1>
+      <hr class="BAR"/>
+
+      <br/>
+      <div class="NOTE">Everything here, i.e. colors & icons, has been used previously, or is currently in use.</i></div>
+      <br/><br/>
+      <div><a href="UIIcons.html" class="styledButton">UI Icons <i class="fas fa-icons"></i></a></div>
+      <br/>
+
+      <div class="BUTTON_BLOCK">
+        <h6 style="margin: 4px 0px 16px 0px">Resources Used<br/>(By Frequency)</h6>
+        <hr class="BAR"/>
+        <div><a href="//fontawesome.com" class="styledButton">Font Awesome <i class="fab fa-font-awesome-flag"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//css-tricks.com" class="styledButton">CSS-Tricks <i class="fas fa-asterisk"></i></a></div>
+            <p id="mobileButtonGap"></p>
+        <div><a href="//coolors.co" class="styledButton">Coolors <i class="fas fa-tint"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//htmlcolorcodes.com" class="styledButton">Color Codes <i class="fas fa-swatchbook"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//cssgradient.io" class="styledButton">CSS Gradient <i class="fas fa-paint-roller"></i></a></div>
+        <p id="mobileButtonGap"></p>
+
+        <hr class="BAR"/>
+        <p id="mobileButtonGap"></p>
+
+        <div><a href="//codepen.io" class="styledButton">CodePen <i class="fab fa-codepen"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//jsfiddle.net" class="styledButton">JS Fiddle <i class="fab fa-jsfiddle"></i></a></div>
+        <p id="mobileButtonGap"></p>
+
+        <hr class="BAR"/>
+        <p id="mobileButtonGap"></p>
+
+        <div><a href="//www.w3schools.com" class="styledButton">W3 Schools <i class="fas fa-graduation-cap"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//stackoverflow.com" class="styledButton">Stack Overflow <i class="fab fa-stack-overflow"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//www.freecodecamp.org" class="styledButton">freeCodeCamp <i class="fab fa-free-code-camp"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//geeksforgeeks.org" class="styledButton">GeeksforGeeks <i class="fas fa-glasses"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//htmldog.com" class="styledButton">HTML Dog <i class="fas fa-dog"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//designmodo.com/rounded-corners" class="styledButton">Designmodo <i class="far fa-grin-wink"></i></a></div>
+        <p id="mobileButtonGap"></p>
+
+        <hr class="BAR"/>
+        <p id="mobileButtonGap"></p>
+
+        <div><a href="//wordcounter.net" class="styledButton">Word Counter <i class="fas fa-file-word"></i></a></div>
+        <p id="mobileButtonGap"></p>
+        <div><a href="//wordstotime.com" class="styledButton">Words To Time <i class="fas fa-clock"></i></a></div>
+        <p id="mobileButtonGap"></p>
+
+      </div>
+
+      <br/><br/>
+
+        <div style="display: inline-block;text-align:center;margin:auto;">
+          <table class="colorsTable">
+            <thead>Swatchbook</thead>
+            <tr><th>Code</th><th>Color</th></tr>
+
+            <!--names are approximations using chir.ag/projects/name-that-color -->
+            <tr><td>white</td><td style="background:white"></td></tr>
+            <tr><td>#f2f2f2</td><td style="background:#f2f2f2"></td></tr><!--concrete--><!--CLOSE-->
+            <tr><td>#333</td><td style="background:#333"></td></tr><!--mineshaft--><!--SPOT ON-->
+            <tr><td>#262626</td><td style="background:#262626"></td></tr><!--mineshaft--><!--KINDA-->
+            <tr><td>black</td><td style="background:black"></td></tr>
+            <tr><td>#009ddb</td><td style="background:#009ddb"></td></tr><!--cerulean--><!--KINDA-->
+            <tr><td>#00b7ff</td><td style="background:#00b7ff"></td></tr><!--dodgerblue--><!--NO-->
+            <tr><td>#0d7328</td><td style="background:#0d7328"></td></tr><!--jewel--><!--KINDA-->
+            <tr><td>#4caf50</td><td style="background:#4caf50"></td></tr><!--fruitsalad--><!--KINDA-->
+            <tr><td>#e1f100</td><td style="background:#e1f100"></td></tr><!--chartreuseyellow--><!--KINDA-->
+            <tr><td>#ffda7f</td><td style="background:#ffda7f"></td></tr><!--grandis--><!--KINDA-->
+            <tr><td>#fc9803</td><td style="background:#fc9803"></td></tr><!--california--><!--SPOT ON-->
+            <tr><td>#ba7002</td><td style="background:#ba7002"></td></tr><!--indochine--><!--CLOSE-->
+            <tr><td>#de0202</td><td style="background:#de0202"></td></tr><!--red--><!--KINDA-->
+            <tr><td>#c13431</td><td style="background:#c13431"></td></tr><!--flushmahogany--><!--SPOT ON-->
+            <tr><td>#e63946</td><td style="background:#e63946"></td></tr><!--amaranth--><!--KINDA-->
+            <tr><td>#ff8c8c</td><td style="background:#ff8c8c"></td></tr><!--vividtangerine--><!--NO-->
+
+          </table>
+        </div>
+
+    </div>
+
+  <footer style="font-size:16px">
+    <i></i>
+  </footer>
+  </body>
+</html>

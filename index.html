@@ -1,6 +1,94 @@
-<!DOCTYPE html>
-<style></style>
-<head></head>
-<body>
-  <p>Test</p>
-</body
+<style>
+body {background-color: black; font-family: Arial;}
+
+.cssload-figure * {box-sizing: border-box;}
+.cssload-figure {
+	margin:56px auto;
+	width: 1em;
+	height: 1em;
+	font-size: 11em;
+	border: 0.025em solid rgba(255,255,255,0.75);
+	background-color: rgb(255,255,255,0.15);
+	animation: cssload-corner 1.8s infinite, cssload-glow 1s infinite;
+	transform-origin: right;
+	border-radius: 0.065em;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:before, .clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+.clearfix:after {clear: both;}
+
+@keyframes cssload-glow {
+  0%, 100% {background-color: rgb(255,255,255,0.15)}
+  50% {background-color: rgb(255,255,255,0.25)}
+}
+
+@keyframes cssload-corner {
+	0%, 100% {border-radius: 0.3em 0em 0em 0em}
+	25% {border-radius: 0em 0.3em 0em 0em}
+	50% {border-radius: 0em 0em 0.3em 0em}
+	75% {border-radius: 0em 0em 0em 0.3em}
+}
+
+
+.SECRET {
+  /*background-color: rgb(0,160,0,0.2);*/
+  padding: 0px 10px 0px 10px;
+  /* Shrink to fit contents */
+  display: inline-block;
+  font-style: italic;
+  margin-right: 50%;
+  margin-bottom: 10%;
+  color: rgb(255,255,255,0.08);
+}
+/*.SECRET::before {
+  font-family: FontAwesome;
+  content: '\f0a4 \0020 Note:\0020';
+}*/
+</style>
+
+<script>
+var quotes = [
+  'Find the <i class="fas fa-door-open"></i>, it\'s hidden on the website!',
+  'Eating cookies... <i class="fas fa-cookie"></i> <i class="fas fa-cookie"></i> <i class="fas fa-cookie-bite"></i>',
+  'You need a break <i class="fab fa-java"></i>',
+  'Hi there! <i class="fas fa-hand-paper""></i> How are you?',
+  '<i class="fas fa-bacon"></i> & <i class="fas fa-pizza-slice"></i>',
+  'Happy Birthday&#8253; <i class="fas fa-birthday-cake"></i>',
+  //'<i class="fas fa-poop" aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> <i class="fas fa-poo" aria-hidden="true"></i> <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i> <i class="fas fa-poo-storm" aria-hidden="true"></i>',
+  'Thank you key workers! <i class="fas fa-user-nurse"></i> <i class="fas fa-user-md"></i> <i class="fas fa-rainbow"></i>',
+  'Don\'t forget! <i class="fas fa-hands-wash"></i> for <i class="fas fa-stopwatch-20"></i>',
+  'Where did all the <i class="fas fa-toilet-paper"></i> go?',
+  'Are you wearing your mask? <i class="fas fa-head-side-mask"></i>'
+]
+
+function newQuote() {
+  var randomNumber= Math.floor(Math.random() * (quotes.length));
+  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+</script>
+
+<title>Loading...</title>
+
+<body onload="newQuote()">
+<script src="/Assets/FontAwesome.js" crossorigin="anonymous"></script>
+
+<div class="cssload-figure" style="color:white"><b style="padding:20px;font-size:0.8em">K.</b></div>
+
+<div style="margin:auto;display:flex;flex-direction:row;justify-content:center;">
+  <div id="quoteDisplay" style="color:white;margin:auto"><!-- Quotes will display here --></div>
+</div>
+<br/><br/><br/>
+<!--<div style="margin:auto;display:flex;flex-direction:row;justify-content:center;">
+  <div class="SECRET" style="margin:auto">There's a hidden door somewhere on this website...</div>
+</div>-->
+
+<link rel="icon" type="image/png" href="KIcon.png">
+<meta HTTP-EQUIV="REFRESH" CONTENT="5; homePage.html">
+
+</body>

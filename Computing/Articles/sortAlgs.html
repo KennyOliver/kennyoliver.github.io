@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kenny | Sorting</title>
+      <link rel="icon" type="image/png" href="../../KIcon.png">
+      <link href="../..//Assets/style.css" rel="stylesheet" type="text/css"/>
+      <link href="../..//Assets/NavBars.css" rel="stylesheet" type="text/css"/>
+      <script src="../..//Assets/FontAwesome.js" crossorigin="anonymous"></script>
+    <div class="mobnav" id="myMobnav">
+      <a class="home" href="../../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+      <a href="../../aboutPage.html"><i class="fas fa-fingerprint"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+        <a href="../../compPage.html" class="active"><i class="fas fa-code"></i></a>
+        <a class="active"><i class="fas fa-chevron-right"></i></a>
+        <a class="active" style="background-color:#53D457"><i class="fas fa-box-open"></i></a>
+      </div>
+      <a href="../../moreStuff.html"><i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a class="home" href="../../homePage.html"><i class="fab fa-kickstarter-k"></i>.</a>
+        <a href="../../aboutPage.html">About <i class="fas fa-fingerprint"></i></a>
+      <div class="fillBlankSpace" style="border-radius:25px">
+      <a href="../../compPage.html" class="active">Computing <i class="fas fa-code"></i></a>
+      <a class="active"><i class="fas fa-chevron-right"></i></a>
+      <a class="active" style="background-color:#53D457">Sort Algs. <i class="fas fa-box-open"></i></a>
+      </div>
+      <a href="../../moreStuff.html">More <i class="fas fa-compass"></i></a>
+      <a href="" class="refreshDiv"><i class="fas fa-redo-alt"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </a>
+    </div>
+<!--<style>
+  li ul::before {font-family: 'FontAwesome'; content: '\f138'; margin:0 5px 0 -15px;}
+  li ul::after {font-family: 'FontAwesome'; content: '\f137'; margin:0 5px 0 5px;}
+</style>-->
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="block">
+    <hr class="BAR"/>
+      <h1 id="aboutMe" classname="aboutMe" class="aboutMe"><i class="fas fa-box-open"></i></h1>
+    <hr class="BAR"/>
+    <br/>
+      <img src="//images.unsplash.com/photo-1519012121217-3c6d687335c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="Image of neon Google sign" width="270" height="180">
+    <br/><br/>
+      <div class="ARTICLE_DATA">3 mins + 7 mins of video</div>
+      <br/><br/>
+      <div class="AUTHOR_BLOCK">
+        <img src="//i.postimg.cc/3w71zdns/238-B2-ADD-DADD-4-EEB-B0-AA-96831-A6-AEE78.jpg" class="AUTHOR_PHOTO">
+        <p class="AUTHOR">Kenny Oliver&nbsp;&nbsp;&nbsp;</p><!-- &nbsp; is space for alignment -->
+      </div>
+    <br/><br/>
+    <div><a href="#TLDR" class="styledButton">TL;DR <i class="fas fa-long-arrow-alt-down"></i></a></div>
+    <h3 class="subtitle">What's the definition of "sorting"?</h3>
+      <p>In simple English, <b>sorting</b> means <b>organising</b> items by type or category.</p>
+    <br/>
+    <h3 class="subtitle">How are items sorted?</h3>
+      <p>Items within a dataset are <b>sorted using algorithms</b>.<br><b>An algoroithm is a set of instructions</b>; used to process data.</p>
+      <p>There's a jungle of sort algorithms!</p>
+      <p>At <b>GCSE</b> (I'm currently in Yr10),<br/>you only need to know <b>3</b> different sort algortithms:</p>
+      <!--<li style="list-style-type: none;">
+        <ul>Bubble Sort</ul>
+        <ul>Insertion Sort</ul>
+        <ul>Merge Sort</ul>
+      </li>-->
+      <b>Bubble Sort, Insertion Sort, and Merge Sort</b>
+    <!--<div><a href="//sorting.at/" class="styledButton">Visit Sorting <i class="fas fa-box-open"></i></a></div>-->
+    <br/><br/>
+    <div><a href="#ALG_VISUALS" class="styledButton">See The Algorithms In Action <i class="fas fa-eye"></i></a></div>
+    <br/><br/>
+    <h3 class="subtitle">Bubble</h3>
+      <p><b>2</b> items are compared <b>at a time</b>.<br/>The items <b>only swap</b> places <b>if</b> the 2nd item has a <b>smaller</b> value than the 1st.</p>
+      <p>Take a look at the algorithm visualiser towards the bottom of the page.<br/>You'll see the items <b>"bubble up"</b> to the end of the list.</p>
+
+      <iframe width="432" height="243" src="//www.youtube-nocookie.com/embed/xli_FI7CuzA?&controls=0&rel=0" frameborder="0" allow="accelerometer;encrypted-media;gyroscope;picture-in-picture" class="iFrameYouTube"></iframe>
+      <!-- default= w560 h315 -->
+      <br/><br/>
+
+    <br/>
+
+    <h3 class="subtitle">Insertion</h3>
+      <p><b>Beginning</b> with the 2nd item,<br/>it is <b>compared</b> to the previous item's (item 1) value.<br/>If the 2nd item is <b>less</b>, it will be <b>placed before</b> the 1st item.</p>
+      <p>The 3rd item is <b>compared</b> to the <b>previous</b> item (item 2),<br/>and if the <b>value</b> of the 3rd is <b>less</b> than the 2nd,<br/>the 3rd is <b>placed before</b> the 2nd.</p>
+      <p>This process <b>repeats</b> with each item in <b>succession</b>,<br/>until every item has been processed.<br/>This is like how you <b>organise</b> a handwritten list alphabetically.</p>
+      <p>Within the entire dataset, a smaller, sorted dataset grows at the beginning.</p>
+      <div><a href="//math.hws.edu/eck/js/sorting/xSortLab.html" class="styledButton">HWS: See what I mean <i class="fas fa-eye"></i></a></div>
+      <br/>
+
+      <iframe width="432" height="243" src="//www.youtube-nocookie.com/embed/JU767SDMDvA?&controls=0&rel=0" frameborder="0" allow="accelerometer;encrypted-media;gyroscope;picture-in-picture" class="iFrameYouTube"></iframe>
+
+    <br/>
+
+    <h3 class="subtitle">Merge</h3>
+      <p>Merge sort is based upon the <b>"Divide & Conquer"</b> plan.</p>
+      <p>The entire dataset is <b>repeatedly split</b> until each dataset is a single item.</p>
+      <p>The algorithm then <b>recombines</b> each dataset in groups,<br/>using the <b>insertion sort</b> algorithm.</p>
+      <p id="ALG_VISUALS">The entire dataset eventually <b>unifies</b> back into one.<br/><b>The end result is a sorted dataset!</b></p>
+
+      <iframe width="432" height="243" src="//www.youtube-nocookie.com/embed/4VqmGXwpLqc?&controls=0&rel=0" frameborder="0" allow="accelerometer;encrypted-media;gyroscope;picture-in-picture" class="iFrameYouTube"></iframe>
+
+    <br/>
+
+    <h3 class="subtitle">In action</h3>
+    <p>Watch the 3 sort algorithms in action:<br/><b>bubble, insertion, and merge</b><br/>Maybe ask yourself, which is the most efficient?</p>
+    <div class="imageBox">
+        <img src="//i.pinimg.com/originals/6c/fa/6f/6cfa6f10ba3dfd0a90b03cfb0926f05d.gif" alt="Toptal Sorting Algorithm GIF" width="270" height="180">
+        <div style="padding-bottom:5px;font-weight:bold">Various Algorithms</div>
+        <div><a href="//www.toptal.com/developers/sorting-algorithms/" class="styledButton">Visit Toptal <i class="far fa-list-ul"></i></a></div>
+      </div>
+    <br/><br id="TLDR"/><br/>
+    <h3 class="subtitle">Just to sum up...</h3>
+      <p>They all have their pros & cons.</p>
+      <p><b>Bubble sort</b> is the <b>simplest</b> to implement,<br/>and faster if the dataset is already partially sorted.<br/>However it becomes <b>slower</b> as the dataset <b>increases</b>.</p>
+      <p><b>Insertion sort</b> works best with <b>small</b> datasets.</p>
+      <p><b>Merge sort</b> takes more steps than <b>bubble</b> sort.<br/>However, when it comes to <b>large</b> datasets, this is <b>outweighed</b>.<br/>Bubble sort is slower.<br/>Nevertheless, merge sort is more <b>complex</b> to integrate.</p>
+      <p>To sum up even more, each performs best in its <b>ideal conditions</b>.<br/>And also the fact that easiest is not always the best.</p>
+      <p>If your mind is still in a knot, watch the videos if you haven't already!</p>
+      <div><a href="//www.bbc.co.uk/bitesize/guides/zjdkw6f/test" class="styledButton">BBC: Test your knowledge <i class="fas fa-brain"></i></a></div>
+    </div>
+  <footer>
+    <i></i>
+  </footer>
+  </body>
+</html>
