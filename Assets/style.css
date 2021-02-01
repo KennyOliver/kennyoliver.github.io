@@ -15,7 +15,7 @@
 
 HTML {background: #262626; animation: blurLoad 0.4s ease-in;} /* Illusion that the blur is faster when ease is included */
 /* CSS_Tricks Rules:
-Use ease-in and ease-out opposite of their names 
+Use ease-in and ease-out opposite of their names
 E.g. ease-in when stuff is LEAVING so that they begin SLOW and get FASTER
 E.g. ease-out when stuff is ENTERING so that they begin FAST and get SLOWER */
 body {
