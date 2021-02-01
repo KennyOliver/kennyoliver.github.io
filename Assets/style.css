@@ -76,7 +76,6 @@ img:hover {
   font-size: 30px;
   /* Make everything aligned */
   display: inline-block;
-  text-align: center;
   margin: 0 auto;
   width: 100%;
 }
@@ -109,11 +108,8 @@ img:hover {
   padding-top: 5px;
   padding-bottom: 5px;
   width: 200px;
-}
-.styledButton {
   transition: 0.3s;
   border-radius: 40px;
-  width: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
