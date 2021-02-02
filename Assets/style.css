@@ -20,7 +20,8 @@ E.g. ease-in when stuff is LEAVING so that they begin SLOW and get FASTER
 E.g. ease-out when stuff is ENTERING so that they begin FAST and get SLOWER */
 body {
   /* background: linear-gradient(0deg, rgba(255,140,140,1) 0%, rgba(255,218,127,1) 100%); */
-  background: linear-gradient(0deg, #ff8c8c 0%, #ffda7f 100%);
+  /* background: linear-gradient(0deg, #ff8c8c 0%, #ffda7f 100%); */
+  background: linear-gradient(0deg, rgba(147,134,255,1) 7%, rgba(255,140,140,1) 35%, rgba(255,218,127,1) 100%);
   font-family: SanFrancisco;
   margin: 0;
 }
