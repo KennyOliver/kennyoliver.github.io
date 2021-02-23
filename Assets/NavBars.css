@@ -121,7 +121,7 @@ footer {
 }
 footer > i::after {
   font-style: italic;
-  content: 'Kenny\'s Website /00A9 2021';
+  content: 'Kenny\'s Website ©2021';
   padding-bottom: 10px;
 }
 
